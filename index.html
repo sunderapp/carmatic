@@ -11,14 +11,20 @@
     <title>LinkedIn: Log In or Sign Up 
         linkedin.com</title>
     <style>
-body {
-  overflow-x: hidden;
-
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+body{
+overflow-x: hidden!important;
+    width: 100vw;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
-html {
-  height: -webkit-fill-available;
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -msbox-sizing: border-box;
+}
+img{
+   max-width:100%;
 }
 .sidenav {
   height: 100%;
@@ -117,6 +123,9 @@ html {
     background: black;
     margin: 17px 0px;
     width: 1px;
+}
+video{
+    width: -webkit-fill-available;
 }
 .w-web-fill{
     width:-webkit-fill-available;
@@ -257,6 +266,7 @@ html {
     background-color: #fff;
     display: flex;
     height: 600px;
+    align-items: center;
     justify-content: center;
     position: relative;
 }
@@ -825,7 +835,7 @@ margin:0px;
             <div class="col-md-5 col-sm-12">
 
         
-              <video id="vid" width="500" height="500" controls>
+              <video id="vid" controls>
                 <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
                 <button id='press'>Play Video</button>
               </video>
